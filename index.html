@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> PedroBot </title>
+  <!-- Vinculamos el archivo de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1> Pedro-Mesaglio/ </h1>
+  </header>
+  
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#sobre-mi">Sobre Mi</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Bienvenido, Programador</h2>
+      <p>Explora mi código y mis proyectos</p>
+      <div class="social-buttons">
+        <a class="btn" href="https://www.linkedin.com/in/pedro-mesaglio-49946a307/" target="_blank">LinkedIn</a>
+        <a class="btn" href="https://github.com/pedromesaglio" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.workana.com/freelancer/05d6d7a7bc6e29cad5af8e493df179c5" target="_blank">Workana</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Sobre Mi -->
+  <section id="sobre-mi">
+    <div class="container">
+      <h2>Sobre Mi</h2>
+      <p>
+        ¡Hola! Soy Pedro Mesaglio, Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web modernas, eficientes y escalables, además de enfocarme en la creación de soluciones de inteligencia artificial e integración de sistemas complejos. Me especializo en el diseño y desarrollo tanto del frontend como del backend, asegurando soluciones robustas, escalables y bien estructuradas.
+        Además, cuento con experiencia desarrollando agentes inteligentes que combinan procesamiento de lenguaje natural (OpenAI), comunicación por voz (SpeechRecognition) y texto, junto con síntesis de voz (pyttsx3). También integro de forma segura las API Keys mediante python-dotenv, garantizando la seguridad y eficiencia de cada proyecto.
+
+
+    </div>
+  </section>
+  
+  <!-- Sección Habilidades -->
+  <section id="habilidades">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Vue.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <ul>
+            <li>Python (Django, Flask)</li>
+            <li>Node.js (Express)</li>
+            <li>API REST</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Bases de Datos</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>FAISS</li>
+            <li>Pinecone</li>
+            <li>Weaviate</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Herramientas y Control de Versiones</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Proyectos -->
+  <section id="proyectos">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="proyectos">
+        <div class="proyecto">
+          <h3>Proyecto 1</h3>
+          <p>Descripción del proyecto 1, con énfasis en la lógica y el código.</p>
+        </div>
+        <div class="proyecto">
+          <h3>Proyecto 2</h3>
+          <p>Descripción del proyecto 2, enfocado en la programación y algoritmos.</p>
+        </div>
+        <div class="proyecto">
+          <h3>Proyecto 3</h3>
+          <p>Descripción del proyecto 3, una muestra de mi trabajo en desarrollo web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Envíame un mensaje si quieres hablar de código o colaborar en un proyecto.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+  </footer>
+  
+  <!-- Chatbot Widget -->
+  <div id="chatbot">
+    <div id="chatbot-header">
+      Chatbot
+      <span id="close-chat">&times;</span>
+    </div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input">
+      <input type="text" id="chatbot-text" placeholder="Escribe tu mensaje...">
+      <button id="chatbot-send">Enviar</button>
+    </div>
+  </div>
+  <button id="open-chatbot">Chatbot</button>
+  
+  <!-- Vinculamos el archivo JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
