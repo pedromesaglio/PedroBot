@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> PedroBot </title>
-  <!-- Vinculamos el archivo de estilos -->
+  <title>Pedro Mesaglio | Desarrollador Full Stack</title>
+  <!-- Google Fonts: Fira Code para apariencia de terminal -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header y navegación -->
   <header>
-    <h1> Pedro-Mesaglio/ </h1>
+    <div class="container header-container">
+      <h1 class="logo">Pedro Mesaglio</h1>
+      <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
-  
-  <!-- Navegación -->
-  <nav>
-    <ul>
-      <li><a href="#sobre-mi">Sobre Mi</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-  
-  <!-- Sección Hero -->
-  <section class="hero">
-    <div class="container">
-      <h2>Bienvenido, Programador</h2>
-      <p>Explora mi código y mis proyectos</p>
+
+ <!-- Sección Hero -->
+ <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h2>Desarrollador Full Stack</h2>
+      <p>Transformo ideas en soluciones digitales escalables y elegantes.</p>
       <div class="social-buttons">
         <a class="btn" href="https://www.linkedin.com/in/pedro-mesaglio-49946a307/" target="_blank">LinkedIn</a>
         <a class="btn" href="https://github.com/pedromesaglio" target="_blank">GitHub</a>
@@ -34,23 +36,19 @@
       </div>
     </div>
   </section>
-  
-  <!-- Sección Sobre Mi -->
+
+  <!-- Sección Sobre mí -->
   <section id="sobre-mi">
     <div class="container">
-      <h2>Sobre Mi</h2>
-      <p>
-        ¡Hola! Soy Pedro Mesaglio, Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web modernas, eficientes y escalables, además de enfocarme en la creación de soluciones de inteligencia artificial e integración de sistemas complejos. Me especializo en el diseño y desarrollo tanto del frontend como del backend, asegurando soluciones robustas, escalables y bien estructuradas.
-        Además, cuento con experiencia desarrollando agentes inteligentes que combinan procesamiento de lenguaje natural (OpenAI), comunicación por voz (SpeechRecognition) y texto, junto con síntesis de voz (pyttsx3). También integro de forma segura las API Keys mediante python-dotenv, garantizando la seguridad y eficiencia de cada proyecto.
-
-
+      <h2>Sobre mí</h2>
+      <p>Hola! Soy Pedro Mesaglio, Desarrollador Full Stack con experiencia en aplicaciones web modernas, eficientes y escalables, especializado en frontend, backend e inteligencia artificial. Desarrollo agentes inteligentes que combinan procesamiento de lenguaje natural (OpenAI), comunicación por voz (SpeechRecognition) y síntesis de voz (pyttsx3), asegurando además una integración segura y eficiente de API Keys con python-dotenv.</p>
     </div>
   </section>
-  
+
   <!-- Sección Habilidades -->
   <section id="habilidades">
     <div class="container">
-      <h2>Habilidades</h2>
+      <h2>Habilidades Técnicas</h2>
       <div class="skills-grid">
         <div class="skill">
           <h3>Frontend</h3>
@@ -84,7 +82,7 @@
           </ul>
         </div>
         <div class="skill">
-          <h3>Herramientas y Control de Versiones</h3>
+          <h3>Herramientas y Versiones</h3>
           <ul>
             <li>Git</li>
             <li>GitHub</li>
@@ -94,71 +92,63 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Sección Proyectos -->
   <section id="proyectos">
     <div class="container">
-      <h2>Proyectos</h2>
-      <div class="proyectos">
-        <div class="proyecto">
+      <h2>Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <div class="project-card">
           <h3>Proyecto 1</h3>
-          <p>Descripción del proyecto 1, con énfasis en la lógica y el código.</p>
+          <p>Descripción breve del proyecto, resaltando la solución implementada y tecnologías usadas.</p>
         </div>
-        <div class="proyecto">
+        <div class="project-card">
           <h3>Proyecto 2</h3>
-          <p>Descripción del proyecto 2, enfocado en la programación y algoritmos.</p>
+          <p>Descripción breve del proyecto, resaltando la solución implementada y tecnologías usadas.</p>
         </div>
-        <div class="proyecto">
+        <div class="project-card">
           <h3>Proyecto 3</h3>
-          <p>Descripción del proyecto 3, una muestra de mi trabajo en desarrollo web.</p>
+          <p>Descripción breve del proyecto, resaltando la solución implementada y tecnologías usadas.</p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- Sección Contacto -->
   <section id="contacto">
     <div class="container">
       <h2>Contacto</h2>
-      <p>Envíame un mensaje si quieres hablar de código o colaborar en un proyecto.</p>
-      <form action="#" method="post">
-        <div>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
+      <form id="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
       </form>
     </div>
   </section>
-  
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Pedro Mesaglio. Todos los derechos reservados.</p>
+    </div>
   </footer>
-  
+
   <!-- Chatbot Widget -->
+  <button id="open-chatbot">💬</button>
   <div id="chatbot">
     <div id="chatbot-header">
-      Chatbot
-      <span id="close-chat">&times;</span>
+      PedroBot
+      <span id="close-chat">✕</span>
     </div>
     <div id="chatbot-messages"></div>
     <div id="chatbot-input">
-      <input type="text" id="chatbot-text" placeholder="Escribe tu mensaje...">
-      <button id="chatbot-send">Enviar</button>
+      <input type="text" placeholder="Habla conmigo...">
+      <button>Enviar</button>
     </div>
   </div>
-  <button id="open-chatbot">Chatbot</button>
-  
-  <!-- Vinculamos el archivo JavaScript -->
+
+  <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
 </html>
